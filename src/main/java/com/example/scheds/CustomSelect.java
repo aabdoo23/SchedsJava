@@ -27,49 +27,71 @@ public class CustomSelect implements Initializable {
     public ListView<String> TAList;
     public TextField TASearchTF;
     public Button TAConfirmBTN;
-    LinkedList<String>TAl,profL,lecL=new LinkedList<>();
+    public RadioButton LabRB;
+    public ListView<String> LabList;
+    public TextField LabSearchTF;
+    public Button LabConfirmBTN;
+    public AnchorPane LabAP;
+    LinkedList<String>TAl,profL,lecL=new LinkedList<>(),labTAl=new LinkedList<>();
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         lecRB.setSelected(true);
         ToggleGroup toggleGroup=new ToggleGroup();
         TARB.setToggleGroup(toggleGroup);
+        LabRB.setToggleGroup(toggleGroup);
         profRB.setToggleGroup(toggleGroup);
         lecRB.setToggleGroup(toggleGroup);
         TAAP.setDisable(true);
+        LabAP.setDisable(true);
         profAP.setDisable(true);
         TARB.setOnAction(e -> {
             TAAP.setDisable(!TARB.isSelected());
             lecAP.setDisable(!lecRB.isSelected());
             profAP.setDisable(!profRB.isSelected());
+            LabAP.setDisable(!LabRB.isSelected());
         });
         lecRB.setOnAction(e -> {
             TAAP.setDisable(!TARB.isSelected());
             lecAP.setDisable(!lecRB.isSelected());
             profAP.setDisable(!profRB.isSelected());
+            LabAP.setDisable(!LabRB.isSelected());
+
         });
         profRB.setOnAction(e -> {
             TAAP.setDisable(!TARB.isSelected());
             lecAP.setDisable(!lecRB.isSelected());
             profAP.setDisable(!profRB.isSelected());
+            LabAP.setDisable(!LabRB.isSelected());
+
+        });
+        LabRB.setOnAction(e -> {
+            TAAP.setDisable(!TARB.isSelected());
+            lecAP.setDisable(!lecRB.isSelected());
+            profAP.setDisable(!profRB.isSelected());
+            LabAP.setDisable(!LabRB.isSelected());
         });
 
         courseLBL.setText(customCourse.courseCode);
-        Set<String>TAs=new HashSet<>(),profs=new HashSet<>();
+        Set<String>TAs=new HashSet<>(),profs=new HashSet<>(),labTAs=new HashSet<>();
         for (Lecture lecture: customCourse.lectures){
             profs.add(lecture.instructor);
         }
         for (Tutorial lecture: customCourse.tutorials){
             TAs.add(lecture.instructor);
         }
+        for (Lab lab:customCourse.labs){
+            labTAs.add(lab.instructor);
+        }
         TAl=new LinkedList<>(TAs);
         profL=new LinkedList<>(profs);
+        labTAl=new LinkedList<>(labTAs);
         for (Lecture lecture: customCourse.lectures){
             lecL.add(String.valueOf(lecture.lectureNumber));
         }
         globals.makeList(TAl,TAList);
         globals.makeList(profL,profList);
-
+        globals.makeList(labTAl,LabList);
         globals.makeList(lecL,lecList);
         ObservableList<String> tata = globals.makeObsList(TAl);
         TASearchTF.textProperty().addListener((observable, oldValue, newValue) -> {
@@ -80,6 +102,11 @@ public class CustomSelect implements Initializable {
         profSearchTF.textProperty().addListener((observable, oldValue, newValue) -> {
             String filter = newValue.toLowerCase();
             profList.setItems(profprof.filtered(course -> course.toLowerCase().contains(filter)));
+        });
+        ObservableList<String> lablab = globals.makeObsList(labTAl);
+        LabSearchTF.textProperty().addListener((observable, oldValue, newValue) -> {
+            String filter = newValue.toLowerCase();
+            LabList.setItems(lablab.filtered(course -> course.toLowerCase().contains(filter)));
         });
 
     }
@@ -141,6 +168,29 @@ public class CustomSelect implements Initializable {
         course.courseCode=customCourse.courseCode+" (TA "+TAList.getSelectionModel().getSelectedItem()+')';
         course.lectures=lecs;
         course.tutorials=tuts;
+        globals.selectedCourses.add(course);
+        globals.showConfirmationAlert("Custom course added");
+
+    }
+    public void confirmLab(){
+        String profName=LabList.getSelectionModel().getSelectedItem();
+        LinkedList<Lab>tuts=new LinkedList<>();
+        LinkedList<Lecture>lecs=new LinkedList<>();
+        for (Lab tutorial: customCourse.labs){
+            if (Objects.equals(tutorial.instructor, profName)){
+                tuts.add(tutorial);
+                for (Lecture lecture:customCourse.lectures){
+                    if (tutorial.labNumber.startsWith(String.valueOf(lecture.lectureNumber))){
+                        lecs.add(lecture);
+                    }
+                }
+            }
+        }
+        Course course=new Course();
+        course.courseCode=customCourse.courseCode+" (Lab TA "+LabList.getSelectionModel().getSelectedItem()+')';
+        course.courseName= customCourse.courseName;
+        course.lectures=lecs;
+        course.labs=tuts;
         globals.selectedCourses.add(course);
         globals.showConfirmationAlert("Custom course added");
 

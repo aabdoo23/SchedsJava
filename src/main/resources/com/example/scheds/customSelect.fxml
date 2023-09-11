@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="395.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scheds.CustomSelect">
+<AnchorPane prefHeight="395.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scheds.CustomSelect">
    <children>
       <Label fx:id="courseLBL" layoutX="14.0" layoutY="14.0" text="course name">
          <font>
@@ -18,14 +17,15 @@
       </Label>
       <RadioButton fx:id="lecRB" layoutX="14.0" layoutY="60.0" mnemonicParsing="false" text="Lock by lecture" />
       <RadioButton fx:id="profRB" layoutX="195.0" layoutY="58.0" mnemonicParsing="false" text="Lock by professor" />
-      <RadioButton fx:id="TARB" layoutX="374.0" layoutY="58.0" mnemonicParsing="false" text="Lock by TA" />
+      <RadioButton fx:id="TARB" layoutX="374.0" layoutY="58.0" mnemonicParsing="false" text="Lock by Tutorial TA" />
+      <RadioButton fx:id="LabRB" layoutX="554.0" layoutY="58.0" mnemonicParsing="false" text="Lock by Lab TA" />
       <AnchorPane fx:id="lecAP" layoutX="18.0" layoutY="92.0" prefHeight="266.0" prefWidth="171.0">
          <children>
             <ListView fx:id="lecList" layoutY="1.0" prefHeight="226.0" prefWidth="171.0" />
             <Button fx:id="lecConfirmBTN" layoutX="111.0" layoutY="227.0" mnemonicParsing="false" onAction="#confirmLec" text="Confirm" />
          </children>
       </AnchorPane>
-      <Label layoutX="354.0" layoutY="358.0" text="ركز هتدوس انهي كونفيرم عشان هتفرق" />
+      <Label layoutX="531.0" layoutY="358.0" text="ركز هتدوس انهي كونفيرم عشان هتفرق" />
       <AnchorPane fx:id="profAP" layoutX="197.0" layoutY="92.0" prefHeight="266.0" prefWidth="171.0">
          <children>
             <ListView fx:id="profList" layoutY="27.0" prefHeight="200.0" prefWidth="171.0" />
@@ -38,6 +38,13 @@
             <ListView fx:id="TAList" layoutY="27.0" prefHeight="200.0" prefWidth="171.0" />
             <TextField fx:id="TASearchTF" layoutY="1.0" prefHeight="26.0" prefWidth="171.0" />
             <Button fx:id="TAConfirmBTN" layoutX="111.0" layoutY="227.0" mnemonicParsing="false" onAction="#confirmTA" text="Confirm" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="LabAP" layoutX="554.0" layoutY="92.0" prefHeight="266.0" prefWidth="171.0">
+         <children>
+            <ListView fx:id="LabList" layoutY="27.0" prefHeight="200.0" prefWidth="171.0" />
+            <TextField fx:id="LabSearchTF" layoutY="1.0" prefHeight="26.0" prefWidth="171.0" />
+            <Button fx:id="LabConfirmBTN" layoutX="111.0" layoutY="226.0" mnemonicParsing="false" onAction="#confirmLab" text="Confirm" />
          </children>
       </AnchorPane>
    </children>

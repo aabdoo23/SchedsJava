@@ -33,7 +33,7 @@ This Java application generates all possible timetables for a given set of cours
 
 1. Clone the repository to your local machine.
    ```shell
-   git clone https://github.com/yourusername/timetable-generator.git
+   git clone https://github.com/aabdoo23/scheds.git
    ```
 
 2. Open the project in your preferred IDE.

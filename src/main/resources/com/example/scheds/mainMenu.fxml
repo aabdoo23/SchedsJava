@@ -18,8 +18,8 @@
       <Button fx:id="clearBTN" layoutX="254.0" layoutY="214.0" mnemonicParsing="false" onAction="#clearSelected" prefHeight="26.0" prefWidth="71.0" text="Clear" />
       <Button fx:id="removeSelectedBTN" layoutX="325.0" layoutY="214.0" mnemonicParsing="false" onAction="#remove" prefHeight="26.0" prefWidth="65.0" text="Remove" />
       <Button fx:id="customSelectBTN" layoutX="15.0" layoutY="214.0" mnemonicParsing="false" onAction="#customSelect" prefHeight="26.0" prefWidth="90.0" text="Custom select" />
-      <CheckBox fx:id="less1CB" layoutX="15.0" layoutY="260.0" mnemonicParsing="false" onAction="#clickCB1" text="Not less than 1 lecture or tutorial per day" />
-      <CheckBox fx:id="gap2CB" layoutX="15.0" layoutY="287.0" mnemonicParsing="false" onAction="#clickCB2" text="No gap larger than 2 hours in any day" />
+      <CheckBox fx:id="less1CB" layoutX="15.0" layoutY="260.0" mnemonicParsing="false" onAction="#clickCB1" text="Not less than 1 lecture or tutorial per day (beta)" />
+      <CheckBox fx:id="gap2CB" layoutX="15.0" layoutY="287.0" mnemonicParsing="false" onAction="#clickCB2" text="No gap larger than 2 hours in any day(beta)" />
       <Label layoutX="15.0" layoutY="18.0" text="Search:" />
       <Label layoutX="323.0" layoutY="278.0" prefHeight="18.0" prefWidth="144.0" text="Abdelrahman Saleh" textFill="#6b6b6b" underline="true">
          <font>

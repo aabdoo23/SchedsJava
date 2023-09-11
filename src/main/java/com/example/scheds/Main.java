@@ -11,7 +11,6 @@ import java.io.IOException;
 import java.time.LocalTime;
 import java.util.LinkedList;
 import java.util.Objects;
-import com.example.scheds.*;
 
 public class Main extends Application {
     @Override
@@ -26,11 +25,7 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
-//        try {
-//            Runtime.getRuntime().exec("python3 "+"script.py");
-//        }catch (Exception e){
-//            e.printStackTrace();
-//        }
+
         try (BufferedReader br = new BufferedReader(new FileReader("course_info.txt"))) {
             String line;
             Course currentCourse = new Course();
@@ -45,7 +40,7 @@ public class Main extends Application {
                     if (line.startsWith("Course Name:")) {
                         currentCourse = new Course();
                         currentCourse.courseCode = line.split(":")[1].trim();
-                        currentCourse.courseName= line.split(":",3)[2].trim();
+                        currentCourse.courseName = line.split(":", 3)[2].trim();
                         currentCourse.lectures = new LinkedList<>();
                         currentCourse.tutorials = new LinkedList<>();
                         for (Course course : globals.courses) {
@@ -97,7 +92,7 @@ public class Main extends Application {
                                             lecture.day = day;
                                             lecture.lectureNumber = section;
                                             lecture.courseCode = currentCourse.courseCode;
-                                            lecture.courseName= currentCourse.courseName;
+                                            lecture.courseName = currentCourse.courseName;
                                             lecture.instructor = instructor;
                                             lecture.startTime = time1;
                                             lecture.endTime = time2;
@@ -105,27 +100,26 @@ public class Main extends Application {
                                         } else if (cnt > 1) {
                                             Tutorial tutorial = new Tutorial();
                                             tutorial.tutorialNumber = section + ((char) ('Z' - cnt + 1));
-                                            tutorial.courseCode= currentCourse.courseCode;
+                                            tutorial.courseCode = currentCourse.courseCode;
                                             tutorial.day = day;
                                             tutorial.startTime = time1;
                                             tutorial.endTime = time2;
                                             tutorial.instructor = instructor;
                                             currentCourse.tutorials.add(tutorial);
                                         }
-                                    } else if(subType.trim().equals("Tutorial")){
+                                    } else if (subType.trim().equals("Tutorial")) {
                                         Tutorial tutorial = new Tutorial();
                                         tutorial.tutorialNumber = section;
-                                        tutorial.courseCode= currentCourse.courseCode;
+                                        tutorial.courseCode = currentCourse.courseCode;
                                         tutorial.day = day;
                                         tutorial.startTime = time1;
                                         tutorial.endTime = time2;
                                         tutorial.instructor = instructor;
                                         currentCourse.tutorials.add(tutorial);
-                                    }
-                                    else{
-                                        Lab lab=new Lab();
+                                    } else {
+                                        Lab lab = new Lab();
                                         lab.labNumber = section;
-                                        lab.courseCode= currentCourse.courseCode;
+                                        lab.courseCode = currentCourse.courseCode;
                                         lab.day = day;
                                         lab.startTime = time1;
                                         lab.endTime = time2;

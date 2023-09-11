@@ -29,18 +29,18 @@ public class globals {
                                                      LinkedList<LinkedList<Tutorial>> allPossibleTutorials,
                                                      LinkedList<LinkedList<Lab>> allPossibleLabs) {
         if (selectedLectures.size() == courses.size()) {
-            if ((not_only_1_any_day && notSingleLectureOrTutorialDay(selectedLectures, selectedTutorials)) &&
-                    (no_two_hour_gap && !hasTimeGapsGreaterThanMinutes(selectedLectures, selectedTutorials, 125))) {
+            if ((not_only_1_any_day && notSingleLectureOrTutorialDay(selectedLectures, selectedTutorials,selectedLabs)) &&
+                    (no_two_hour_gap && !hasTimeGapsGreaterThanMinutes(selectedLectures, selectedTutorials, selectedLabs,125))) {
                 allPossibleLectures.add(new LinkedList<>(selectedLectures));
                 allPossibleTutorials.add(new LinkedList<>(selectedTutorials));
                 allPossibleLabs.add(new LinkedList<>(selectedLabs));
-            } else if ((not_only_1_any_day && notSingleLectureOrTutorialDay(selectedLectures, selectedTutorials)) && !no_two_hour_gap) {
+            } else if ((not_only_1_any_day && notSingleLectureOrTutorialDay(selectedLectures, selectedTutorials,selectedLabs)) && !no_two_hour_gap) {
                 allPossibleLectures.add(new LinkedList<>(selectedLectures));
                 allPossibleTutorials.add(new LinkedList<>(selectedTutorials));
                 allPossibleLabs.add(new LinkedList<>(selectedLabs));
 
             } else if (!not_only_1_any_day &&
-                    (no_two_hour_gap && !hasTimeGapsGreaterThanMinutes(selectedLectures, selectedTutorials, 125))) {
+                    (no_two_hour_gap && !hasTimeGapsGreaterThanMinutes(selectedLectures, selectedTutorials, selectedLabs,125))) {
                 allPossibleLectures.add(new LinkedList<>(selectedLectures));
                 allPossibleTutorials.add(new LinkedList<>(selectedTutorials));
                 allPossibleLabs.add(new LinkedList<>(selectedLabs));
@@ -122,7 +122,7 @@ public class globals {
     }
 
 
-    private static boolean notSingleLectureOrTutorialDay(LinkedList<Lecture> lectures, LinkedList<Tutorial> tutorials) {
+    private static boolean notSingleLectureOrTutorialDay(LinkedList<Lecture> lectures, LinkedList<Tutorial> tutorials,LinkedList<Lab>labs) {
         Map<String, Integer> lectureCountByDay = new HashMap<>();
 
         for (Lecture lecture : lectures) {
@@ -130,6 +130,10 @@ public class globals {
             lectureCountByDay.put(day, lectureCountByDay.getOrDefault(day, 0) + 1);
         }
         for (Tutorial lecture : tutorials) {
+            String day = lecture.day;
+            lectureCountByDay.put(day, lectureCountByDay.getOrDefault(day, 0) + 1);
+        }
+        for (Lab lecture : labs) {
             String day = lecture.day;
             lectureCountByDay.put(day, lectureCountByDay.getOrDefault(day, 0) + 1);
         }
@@ -258,7 +262,7 @@ public class globals {
         return (int) ChronoUnit.MINUTES.between(startTime, endTime);
     }
 
-    public static boolean hasTimeGapsGreaterThanMinutes(LinkedList<Lecture> lectures, LinkedList<Tutorial> tutorials, int minutes) {
+    public static boolean hasTimeGapsGreaterThanMinutes(LinkedList<Lecture> lectures, LinkedList<Tutorial> tutorials,LinkedList<Lab> labs, int minutes) {
 
         Map<String, LinkedList<Pair<LocalTime, LocalTime>>> lecturesByDay = new HashMap<>();
 
@@ -273,7 +277,11 @@ public class globals {
             lecturesByDay.putIfAbsent(day, new LinkedList<>());
             lecturesByDay.get(day).add(new Pair<>(lecture.startTime, lecture.endTime));
         }
-
+        for (Lab lecture : labs) {
+            String day = lecture.day;
+            lecturesByDay.putIfAbsent(day, new LinkedList<>());
+            lecturesByDay.get(day).add(new Pair<>(lecture.startTime, lecture.endTime));
+        }
         // Check each day for gaps between lectures
         for (LinkedList<Pair<LocalTime, LocalTime>> dayLectures : lecturesByDay.values()) {
             // Sort lectures by start time

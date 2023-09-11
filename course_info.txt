@@ -7680,7 +7680,7 @@ Schedule:
 Wednesday
 ---------
 Instructor Name: Ahmed Mostafa Askar
-Course Name: MENG306: Kinematics&Dynamics of Mechanical 
+Course Name: MENG306: Kinematics&Dynamics of Mechanical
 Syst
 Section: 01 | Session: Session 01 | Subtype: Lecture
 Schedule:
@@ -7688,7 +7688,7 @@ Schedule:
 Sunday
 ---------
 Instructor Name: Ahmed Waleed Etman
-Course Name: MENG306: Kinematics&Dynamics of Mechanical 
+Course Name: MENG306: Kinematics&Dynamics of Mechanical
 Syst
 Section: 01A | Session: Session 01 | Subtype: Tutorial
 Schedule:

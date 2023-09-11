@@ -1,0 +1,316 @@
+Instructor Name: Instructor
+Course Name: CSCI305: Database Systems
+Section: 01 | Session: Session 01 | Subtype: Lecture
+Schedule:
+8:30 AM - 10:29 AM
+Sunday
+---------
+Instructor Name: Instructor
+Course Name: CSCI305: Database Systems
+Section: 02 | Session: Session 01 | Subtype: Lecture
+Schedule:
+10:30 AM - 12:29 PM
+Sunday
+---------
+Instructor Name: Instructor
+Course Name: CSCI305: Database Systems
+Section: 03 | Session: Session 01 | Subtype: Lecture
+Schedule:
+12:30 PM - 2:29 PM
+Sunday
+---------
+Instructor Name: Hager Mahmoud Ashry
+Course Name: CSCI305: Database Systems
+Section: 01A | Session: Session 02 | Subtype: Lab
+Schedule:
+1:30 PM - 3:29 PM
+Tuesday
+---------
+Instructor Name: Hager Mahmoud Ashry
+Course Name: CSCI305: Database Systems
+Section: 01B | Session: Session 02 | Subtype: Lab
+Schedule:
+3:30 PM - 5:29 PM
+Tuesday
+---------
+Instructor Name: Hager Mahmoud Ashry
+Course Name: CSCI305: Database Systems
+Section: 02A | Session: Session 02 | Subtype: Lab
+Schedule:
+10:30 AM - 12:29 PM
+Wednesday
+---------
+Instructor Name: Kholoud Khaled Gomaa Elsayed
+Course Name: CSCI305: Database Systems
+Section: 02B | Session: Session 02 | Subtype: Lab
+Schedule:
+8:30 AM - 10:29 AM
+Wednesday
+---------
+Instructor Name: Kholoud Khaled Gomaa Elsayed
+Course Name: CSCI305: Database Systems
+Section: 03A | Session: Session 02 | Subtype: Lab
+Schedule:
+10:30 AM - 12:29 AM
+Thursday
+---------
+Instructor Name: Kholoud Khaled Gomaa Elsayed
+Course Name: CSCI305: Database Systems
+Section: 03B | Session: Session 02 | Subtype: Lab
+Schedule:
+2:30 PM - 4:29 PM
+Wednesday
+---------
+
+Instructor Name: Noha Gamaledin Saad
+Course Name: CSCI322: Data analysis
+Section: 01 | Session: Session 02 | Subtype: Lecture
+Schedule:
+12:30 PM - 2:29 PM
+Sunday
+---------
+Instructor Name: Noha Gamaledin Saad
+Course Name: CSCI322: Data analysis
+Section: 02 | Session: Session 02 | Subtype: Lecture
+Schedule:
+8:30 AM - 10:29 AM
+Thursday
+---------
+Instructor Name: Mustafa Ahmed ElAttar
+Course Name: CSCI322: Data analysis
+Section: 03 | Session: Session 02 | Subtype: Lecture
+Schedule:
+12:30 PM - 2:29 PM
+Thursday
+---------
+Instructor Name: Youmna Eid
+Course Name: CSCI322: Data analysis
+Section: 01A | Session: Session 01 | Subtype: Lab
+Schedule:
+8:30 AM - 10:29 AM
+Monday
+---------
+Instructor Name: Youmna Eid
+Course Name: CSCI322: Data analysis
+Section: 01B | Session: Session 01 | Subtype: Lab
+Schedule:
+4:30 PM - 6:29 PM
+Monday
+---------
+Instructor Name: Lamiaa Omar
+Course Name: CSCI322: Data analysis
+Section: 02A | Session: Session 01 | Subtype: Lab
+Schedule:
+10:30 AM - 12:29 PM
+Sunday
+---------
+Instructor Name: Lamiaa Omar
+Course Name: CSCI322: Data analysis
+Section: 02B | Session: Session 01 | Subtype: Lab
+Schedule:
+10:30 AM - 12:29 PM
+Tuesday
+---------
+Instructor Name: Salma Gamal
+Course Name: CSCI322: Data analysis
+Section: 03A | Session: Session 01 | Subtype: Lab
+Schedule:
+8:30 AM - 10:29 AM
+Tuesday
+---------
+Instructor Name: Salma Gamal
+Course Name: CSCI322: Data analysis
+Section: 03B | Session: Session 01 | Subtype: Lab
+Schedule:
+5:30 PM - 7:29 PM
+Tuesday
+---------
+Instructor Name: Marwa Aref Sorour
+Course Name: MATH301i: Linear Algebra
+Section: 01 | Session: Session 01 | Subtype: Lecture
+Schedule:
+12:30 PM - 2:29 PM
+Tuesday
+---------
+Instructor Name: Mohamed Abdelaziz Elbeltagy
+Course Name: MATH301i: Linear Algebra
+Section: 02 | Session: Session 01 | Subtype: Lecture
+Schedule:
+4:30 PM - 6:29 PM
+Monday
+---------
+Instructor Name: Tasneem Tarek Mahmoud
+Course Name: MATH301i: Linear Algebra
+Section: 01A | Session: Session 01 | Subtype: Tutorial
+Schedule:
+10:30 AM - 12:29 PM
+Monday
+---------
+Instructor Name: Tasneem Tarek Mahmoud
+Course Name: MATH301i: Linear Algebra
+Section: 01B | Session: Session 01 | Subtype: Tutorial
+Schedule:
+3:30 PM - 5:29 PM
+Tuesday
+---------
+Instructor Name: Tasneem Tarek Mahmoud
+Course Name: MATH301i: Linear Algebra
+Section: 02A | Session: Session 01 | Subtype: Tutorial
+Schedule:
+1:30 PM - 3:29 PM
+Saturday
+---------
+Instructor Name: Tasneem Tarek Mahmoud
+Course Name: MATH301i: Linear Algebra
+Section: 02B | Session: Session 01 | Subtype: Tutorial
+Schedule:
+8:30 AM - 10:29 AM
+Thursday
+---------
+Instructor Name: Sahar Ali Fawzy
+Course Name: BMD302: Clinical Informatics
+Section: 01 | Session: Session 01 | Subtype: Lecture
+Schedule:
+12:30 PM - 2:29 PM
+Tuesday
+---------
+Instructor Name: Mennatallah Abdelsattar Ramadan
+Course Name: BMD302: Clinical Informatics
+Section: 01A | Session: Session 01 | Subtype: Lab
+Schedule:
+2:30 PM - 4:29 PM
+Thursday
+---------
+Instructor Name: Mennatallah Abdelsattar Ramadan
+Course Name: BMD302: Clinical Informatics
+Section: 01B | Session: Session 01 | Subtype: Lab
+Schedule:
+3:30 PM - 5:29 PM
+Tuesday
+---------
+Instructor Name: Instructor
+Course Name: BMD301: Bioinformatics
+Section: 01 | Session: Session 01 | Subtype: Lecture
+Schedule:
+2:30 PM - 4:29 PM
+Tuesday
+---------
+Instructor Name: Omnia Saeed Abdelraouf
+Course Name: BMD301: Bioinformatics
+Section: 01A | Session: Session 01 | Subtype: Lab
+Schedule:
+12:30 PM - 2:29 PM
+Thursday
+---------
+Instructor Name: Omnia Saeed Abdelraouf
+Course Name: BMD301: Bioinformatics
+Section: 01B | Session: Session 01 | Subtype: Lab
+Schedule:
+2:30 PM - 4:29 PM
+Thursday
+---------
+Instructor Name: Ahmed Fathy Elnokrashy
+Course Name: CSCI313/ECEN428: Software Engineering
+Section: 01 | Session: Session 01 | Subtype: Lecture
+Schedule:
+3:30 PM - 5:29 PM
+Thursday
+---------
+Instructor Name: Ahmed Fathy Elnokrashy
+Course Name: CSCI313/ECEN428: Software Engineering
+Section: 02 | Session: Session 01 | Subtype: Lecture
+Schedule:
+1:30 PM - 3:29 PM
+Thursday
+---------
+Instructor Name: Ahmed Fathy Elnokrashy
+Course Name: CSCI313/ECEN428: Software Engineering
+Section: 03 | Session: Session 01 | Subtype: Lecture
+Schedule:
+10:30 AM - 12:29 PM
+Thursday
+---------
+Instructor Name: Instructor
+Course Name: CSCI313/ECEN428: Software Engineering
+Section: 04 | Session: Session 01 | Subtype: Lecture
+Schedule:
+8:30 AM - 10:29 AM
+Monday
+---------
+Instructor Name: Instructor
+Course Name: CSCI313/ECEN428: Software Engineering
+Section: 05 | Session: Session 01 | Subtype: Lecture
+Schedule:
+10:30 AM - 12:29 PM
+Monday
+---------
+Instructor Name: Rahma Mohamed Ahmed
+Course Name: CSCI313/ECEN428: Software Engineering
+Section: 01A | Session: Session 01 | Subtype: Lab
+Schedule:
+10:30 AM - 12:29 PM
+Monday
+---------
+Instructor Name: Rahma Mohamed Ahmed
+Course Name: CSCI313/ECEN428: Software Engineering
+Section: 01B | Session: Session 01 | Subtype: Lab
+Schedule:
+4:30 PM - 6:29 PM
+Sunday
+---------
+Instructor Name: Rahma Mohamed Ahmed
+Course Name: CSCI313/ECEN428: Software Engineering
+Section: 02A | Session: Session 01 | Subtype: Lab
+Schedule:
+4:30 PM - 6:29 PM
+Tuesday
+---------
+Instructor Name: Rahma Mohamed Ahmed
+Course Name: CSCI313/ECEN428: Software Engineering
+Section: 02B | Session: Session 01 | Subtype: Lab
+Schedule:
+2:30 PM - 4:29 PM
+Tuesday
+---------
+Instructor Name: Rahma Mohamed Ahmed
+Course Name: CSCI313/ECEN428: Software Engineering
+Section: 03A | Session: Session 01 | Subtype: Lab
+Schedule:
+2:30 PM - 4:29 PM
+Tuesday
+---------
+Instructor Name: Rahma Mohamed Ahmed
+Course Name: CSCI313/ECEN428: Software Engineering
+Section: 03B | Session: Session 01 | Subtype: Lab
+Schedule:
+2:30 PM - 4:29 PM
+Monday
+---------
+Instructor Name: Rahma Mohamed Ahmed
+Course Name: CSCI313/ECEN428: Software Engineering
+Section: 04A | Session: Session 01 | Subtype: Lab
+Schedule:
+2:30 PM - 4:29 PM
+Monday
+---------
+Instructor Name: Rahma Mohamed Ahmed
+Course Name: CSCI313/ECEN428: Software Engineering
+Section: 04B | Session: Session 01 | Subtype: Lab
+Schedule:
+10:30 AM - 12:29 PM
+Thursday
+---------
+Instructor Name: Rahma Mohamed Ahmed
+Course Name: CSCI313/ECEN428: Software Engineering
+Section: 05A | Session: Session 01 | Subtype: Lab
+Schedule:
+4:30 PM - 6:29 PM
+Thursday
+---------
+Instructor Name: Rahma Mohamed Ahmed
+Course Name: CSCI313/ECEN428: Software Engineering
+Section: 05B | Session: Session 01 | Subtype: Lab
+Schedule:
+4:30 PM - 6:29 PM
+Wednesday
+---------
